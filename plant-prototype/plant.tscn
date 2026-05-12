@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c8xwyjrys0bcw"]
+
+[ext_resource type="Script" uid="uid://cdrxrjxaqo1hg" path="res://plant.gd" id="1_t03al"]
+
+[node name="plant" type="Sprite2D" unique_id=1633248879]
+script = ExtResource("1_t03al")
+size = Vector2(200, 100)
+
+[node name="Button" type="Button" parent="." unique_id=157658890]
+offset_right = 40.0
+offset_bottom = 41.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2120714390]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

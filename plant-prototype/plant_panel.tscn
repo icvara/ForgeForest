@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://dwcwpx57jl1ir"]
+
+[ext_resource type="Script" uid="uid://7bkn1yxwlfxb" path="res://plant_panel.gd" id="1_73ikl"]
+
+[node name="plant_panel" type="Panel" unique_id=1510108176]
+offset_right = 186.0
+offset_bottom = 304.0
+script = ExtResource("1_73ikl")
+
+[node name="Label" type="Label" parent="." unique_id=1714842461]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 15.0
+offset_right = 129.0
+offset_bottom = 38.0
+text = "Select plant"
+
+[node name="Label5" type="Label" parent="." unique_id=692501724]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 222.0
+offset_right = 152.0
+offset_bottom = 245.0
+text = "right click to place"
+
+[node name="Label2" type="Label" parent="." unique_id=834355257]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 77.0
+offset_right = 55.0
+offset_bottom = 100.0
+text = "Maxsize"
+
+[node name="HSlider" type="HSlider" parent="Label2" unique_id=1394637762]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 6.0
+offset_right = 148.0
+offset_bottom = 22.0
+min_value = 1.0
+max_value = 10.0
+value = 1.0
+
+[node name="Label3" type="Label" parent="." unique_id=615197211]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 115.0
+offset_right = 79.0
+offset_bottom = 138.0
+text = "Growth"
+
+[node name="HSlider_growth" type="HSlider" parent="Label3" unique_id=799318932]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 6.0
+offset_right = 148.0
+offset_bottom = 22.0
+max_value = 2.0
+step = 0.5
+
+[node name="Label4" type="Label" parent="." unique_id=1812706449]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 159.0
+offset_right = 79.0
+offset_bottom = 185.0
+text = "Color"
+
+[node name="HSlider" type="Button" parent="Label4" unique_id=496693626]
+layout_mode = 0
+offset_left = 67.0
+offset_top = -2.0
+offset_right = 140.0
+offset_bottom = 29.0
+text = "choose"
+
+[node name="ColorPicker" type="ColorPicker" parent="Label4" unique_id=1101180996]
+visible = false
+layout_mode = 0
+offset_left = 175.0
+offset_top = -155.0
+offset_right = 473.0
+offset_bottom = 109.0
+edit_alpha = false
+edit_intensity = false
+sampler_visible = false
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false
+
+[node name="Button" type="Button" parent="Label4/ColorPicker" unique_id=97086131]
+layout_mode = 2
+text = "select color"
+
+[connection signal="drag_ended" from="Label2/HSlider" to="." method="_on_h_slider_drag_ended"]
+[connection signal="value_changed" from="Label2/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="Label3/HSlider_growth" to="." method="_on_h_slider_growth_value_changed"]
+[connection signal="pressed" from="Label4/HSlider" to="." method="_on_h_slider_pressed"]
+[connection signal="color_changed" from="Label4/ColorPicker" to="." method="_on_color_picker_color_changed"]
+[connection signal="pressed" from="Label4/ColorPicker/Button" to="." method="_on_button_pressed"]

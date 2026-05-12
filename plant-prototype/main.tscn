@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d3b47wm5qgxa3"]
+
+[ext_resource type="Script" uid="uid://c5dd76hp6xw4o" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dwcwpx57jl1ir" path="res://plant_panel.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://td2i8nx3e2po" path="res://time_panel.tscn" id="3_h2yge"]
+
+[node name="Node2D" type="Node2D" unique_id=916102216 node_paths=PackedStringArray("game_time", "plant_menu")]
+script = ExtResource("1_ig7tw")
+game_time = NodePath("Time_panel")
+plant_menu = NodePath("plant_panel")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1254122194]
+offset_right = 1153.0
+offset_bottom = 649.0
+color = Color(0.27, 0.20763001, 0.1809, 1)
+
+[node name="plant_panel" parent="." unique_id=1510108176 instance=ExtResource("2_0xm2m")]
+
+[node name="Time_panel" parent="." unique_id=866880662 instance=ExtResource("3_h2yge")]
+offset_left = 320.0
+offset_top = 548.0
+offset_right = 320.0
+offset_bottom = 548.0

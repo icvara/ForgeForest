@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://td2i8nx3e2po"]
+
+[ext_resource type="Script" uid="uid://b6jr0sgcwooqx" path="res://time_panel.gd" id="1_sykmt"]
+
+[node name="Time_panel" type="Panel" unique_id=866880662]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 365.0
+offset_top = 558.0
+offset_right = -347.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sykmt")
+
+[node name="Button" type="Button" parent="." unique_id=1091169185]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 23.0
+offset_right = 268.0
+offset_bottom = 54.0
+text = "next day"
+
+[node name="CheckBox" type="CheckBox" parent="." unique_id=1469986056]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 150.0
+offset_bottom = 38.0
+text = "continous time"
+
+[node name="lab" type="Label" parent="." unique_id=1416867309]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 37.0
+offset_right = 161.0
+offset_bottom = 68.0
+text = "timespeed"
+
+[node name="HSlider" type="HSlider" parent="lab" unique_id=833628593]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 28.0
+offset_right = 90.0
+offset_bottom = 44.0
+max_value = 10.0
+
+[node name="Label" type="Label" parent="." unique_id=1187736310]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.097
+anchor_bottom = 0.256
+offset_left = 288.0
+offset_top = 20.0
+offset_right = 395.842
+offset_bottom = 45.96
+text = "also left click to 
+make them growth"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="value_changed" from="lab/HSlider" to="." method="_on_h_slider_value_changed"]
