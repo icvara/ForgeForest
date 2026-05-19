@@ -75,7 +75,7 @@ public class GardeningSystem : MonoBehaviour
 
 
 
-    private void SelectObject(int ID)
+    public void SelectObject(int ID)
     {
 
         SelectedObjectIndex = Database.ObjectsData.FindIndex(data => data.ID == ID);
