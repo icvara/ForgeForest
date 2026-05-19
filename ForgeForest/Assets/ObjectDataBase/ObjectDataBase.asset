@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9abd2022aac3b42bdb1dd6b5b12900, type: 3}
+  m_Name: ObjectDataBase
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectDatabaseSO
+  ObjectsData:
+  - <Name>k__BackingField: Free Object Space
+    <ID>k__BackingField: 0
+    <objectType>k__BackingField: 3
+    <size>k__BackingField: {x: 0, y: 0}
+    <prefab>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: Berry Bush
+    <ID>k__BackingField: 1
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: a03a7550169799c4da40402541d0b41c, type: 3}
+  - <Name>k__BackingField: Bush
+    <ID>k__BackingField: 2
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: 7a05c9e9862e37e4cac6d8715618e99d, type: 3}
+  - <Name>k__BackingField: Crocus
+    <ID>k__BackingField: 3
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: cb36581f2da3d974bb96b5f4155514bc, type: 3}
+  - <Name>k__BackingField: JackOlantern
+    <ID>k__BackingField: 4
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: 9df160b2e098a0e439a2dc80706335c8, type: 3}
+  - <Name>k__BackingField: PineTree
+    <ID>k__BackingField: 5
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: 77625a91391e1b04c88e89ad00a3d410, type: 3}
+  - <Name>k__BackingField: Tree
+    <ID>k__BackingField: 6
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: 8b7eea89746407f469c390d0b519e198, type: 3}
+  - <Name>k__BackingField: Tulip
+    <ID>k__BackingField: 7
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: ac8e831d3e212674d9a411d0e095f830, type: 3}
+  - <Name>k__BackingField: Willow Tree
+    <ID>k__BackingField: 8
+    <objectType>k__BackingField: 1
+    <size>k__BackingField: {x: 1, y: 1}
+    <prefab>k__BackingField: {fileID: 7935613637227915728, guid: d64a6d23a0d5d964eb5d15c389f51be4, type: 3}

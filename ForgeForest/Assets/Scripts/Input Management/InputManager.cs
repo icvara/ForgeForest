@@ -21,7 +21,7 @@ public class InputManager : MonoBehaviour , IInputMangementService
 
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         inputActions.Disable();
         inputActions.Dispose();
