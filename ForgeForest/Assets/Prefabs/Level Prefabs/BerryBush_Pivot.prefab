@@ -48,6 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df54cc5c75b7fc45876074bc45038e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlantGrowthSystem
+  PlantPhases:
+  - {fileID: 5613014737690682362}
+  - {fileID: 8351220725036473915}
+  - {fileID: 9086834332751348308}
+  - {fileID: 7541175546364722352}
+  GrowthTime: 10
 --- !u!1 &7935613637227915728
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,8 +63,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7506618063374558133}
+  - component: {fileID: -3826290555006176940}
   m_Layer: 0
-  m_Name: 'BerryBush_Pivot '
+  m_Name: BerryBush_Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,6 +87,21 @@ Transform:
   - {fileID: 8429648832367153362}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3826290555006176940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7935613637227915728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce88ea8e82bcd74f89943f58e4998e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlacedPlant
+  ObjectID: 1
+  Size: {x: 1, y: 1}
+  Phase: 0
 --- !u!1001 &1167154268747259458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,6 +163,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fcca072240b66042b64ce4b142aae3b, type: 3}
+--- !u!1 &5613014737690682362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6762154520888163768, guid: 8fcca072240b66042b64ce4b142aae3b, type: 3}
+  m_PrefabInstance: {fileID: 1167154268747259458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7674528260902180957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8841681338844546591, guid: 8fcca072240b66042b64ce4b142aae3b, type: 3}
@@ -212,6 +239,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2879094844260953918, guid: c2c65218443345a438c5c916eca4e1e1, type: 3}
   m_PrefabInstance: {fileID: 4466955477661071716}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9086834332751348308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4892945462691035952, guid: c2c65218443345a438c5c916eca4e1e1, type: 3}
+  m_PrefabInstance: {fileID: 4466955477661071716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4726012827328115018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,6 +310,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8636305653989078643, guid: 9a827b56995c76047ba601890783fdc3, type: 3}
   m_PrefabInstance: {fileID: 4726012827328115018}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7541175546364722352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2968303802362007034, guid: 9a827b56995c76047ba601890783fdc3, type: 3}
+  m_PrefabInstance: {fileID: 4726012827328115018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7117178760143509897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,5 +379,10 @@ PrefabInstance:
 --- !u!4 &3813406410497315291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6210108411710589010, guid: 5be766ca3e7e41643aa197b38ddf084f, type: 3}
+  m_PrefabInstance: {fileID: 7117178760143509897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8351220725036473915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1234042781247391666, guid: 5be766ca3e7e41643aa197b38ddf084f, type: 3}
   m_PrefabInstance: {fileID: 7117178760143509897}
   m_PrefabAsset: {fileID: 0}

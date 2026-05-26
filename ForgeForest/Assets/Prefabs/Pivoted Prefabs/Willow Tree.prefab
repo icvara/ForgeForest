@@ -230,6 +230,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df54cc5c75b7fc45876074bc45038e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlantGrowthSystem
+  PlantPhases:
+  - {fileID: 467293320236628366}
+  - {fileID: 6461647366291004223}
+  - {fileID: 2399325519305171003}
+  - {fileID: 6570415415707711915}
+  GrowthTime: 10
 --- !u!1 &6461647366291004223
 GameObject:
   m_ObjectHideFlags: 0

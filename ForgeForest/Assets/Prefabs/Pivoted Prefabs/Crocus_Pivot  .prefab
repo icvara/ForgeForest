@@ -48,6 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df54cc5c75b7fc45876074bc45038e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlantGrowthSystem
+  PlantPhases:
+  - {fileID: 4818934148184362621}
+  - {fileID: 3601819519310176420}
+  - {fileID: 2079950144416373796}
+  - {fileID: 5139329269391984596}
+  GrowthTime: 10
 --- !u!1 &7935613637227915728
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +152,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2864029238992609430, guid: 5f0f2b1946f0af84294fbcf30dfc22f7, type: 3}
   m_PrefabInstance: {fileID: 3237873637191527777}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5139329269391984596 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7763550821136444085, guid: 5f0f2b1946f0af84294fbcf30dfc22f7, type: 3}
+  m_PrefabInstance: {fileID: 3237873637191527777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3405592686207173310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207,6 +218,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc85eb79382b6764daef02455bba5cbf, type: 3}
+--- !u!1 &2079950144416373796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3719532541648690842, guid: cc85eb79382b6764daef02455bba5cbf, type: 3}
+  m_PrefabInstance: {fileID: 3405592686207173310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4896960845627019789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7833562334832644275, guid: cc85eb79382b6764daef02455bba5cbf, type: 3}
@@ -273,6 +289,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ecde7d234937904194268e93e071eab, type: 3}
+--- !u!1 &3601819519310176420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8548308812926156843, guid: 2ecde7d234937904194268e93e071eab, type: 3}
+  m_PrefabInstance: {fileID: 5142418451788406927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5177011743161732166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 37711695336795337, guid: 2ecde7d234937904194268e93e071eab, type: 3}
@@ -335,6 +356,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e3bc51ba1be1f44935c3678c78418a, type: 3}
+--- !u!1 &4818934148184362621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2831458293011378766, guid: a8e3bc51ba1be1f44935c3678c78418a, type: 3}
+  m_PrefabInstance: {fileID: 7325974798159428659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6771932636964124179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4058213412870507040, guid: a8e3bc51ba1be1f44935c3678c78418a, type: 3}

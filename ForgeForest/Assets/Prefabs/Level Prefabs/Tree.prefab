@@ -138,6 +138,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df54cc5c75b7fc45876074bc45038e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlantGrowthSystem
+  PlantPhases:
+  - {fileID: 7232504335260382934}
+  - {fileID: 2712258665060660629}
+  - {fileID: 9095298800733163991}
+  GrowthTime: 10
 --- !u!1 &7232504335260382934
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlacedPlant
   ObjectID: 6
   Size: {x: 1, y: 1}
+  Phase: 0
 --- !u!1 &9095298800733163991
 GameObject:
   m_ObjectHideFlags: 0
