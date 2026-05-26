@@ -19,12 +19,9 @@ public class PlantGrowthSystem : MonoBehaviour
 
   
 
-    private void Update()
+    private void Start()
     {
-        if (!FullyGrown)
-        {
-            UpdatePlantBasedOnPhase(Time.deltaTime);
-        }
+        TimeManager.instance.TimeChanged += UpdatePlantBasedOnPhase;
     }
 
     public void UpdatePlantBasedOnPhase(float timePassed)
