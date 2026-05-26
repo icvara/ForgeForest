@@ -47,7 +47,30 @@ public class GridData
         }
         return true;
     }
+
+    public PlacementData GetPlacementData(Vector3Int gridPosition)
+    {
+        if (placedObjects.TryGetValue(gridPosition, out PlacementData data))
+        {
+            return data;
+        }
+
+        return null;
+    }
+
+    public void RemoveObjectAt(Vector3Int gridPosition)
+    {
+        if (!placedObjects.TryGetValue(gridPosition, out PlacementData data))
+            return;
+
+        foreach (Vector3Int pos in data.OccupiedPositions)
+        {
+            placedObjects.Remove(pos);
+        }
+    }
 }
+
+
 
 public class PlacementData
 {
@@ -55,12 +78,14 @@ public class PlacementData
 
     public int ID { get; private set; }
 
-    public int PlacedObjectIndex { get; private set; }
+    public int placedObjectIndex { get; private set; }
 
     public PlacementData(List<Vector3Int> occupiedPositions, int iD, int PlaceObjectIndex)
     {
         this.OccupiedPositions = occupiedPositions;
         ID = iD;
-        PlacedObjectIndex = PlacedObjectIndex;
+        placedObjectIndex = PlaceObjectIndex;
     }
+
+
 }

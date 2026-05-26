@@ -97,7 +97,9 @@ public class GardeningSystem : MonoBehaviour
             case ObjectTypes.Plant:
                 PlantPlant();
                 break;
-
+            case ObjectTypes.Tool:
+                RemovePlant();
+                break;
             default:
                 Debug.Log("No Tool Selected");
                 break;
@@ -127,4 +129,33 @@ public class GardeningSystem : MonoBehaviour
     {
         return PlantData.CanPlaceObjectAT(gridPosition, Database.ObjectsData[selectedObjectIndex].size);
     }
- }
+
+    private void RemovePlant()
+    {
+        Vector3Int gridPosition =
+            grid.WorldToCell(player.RayCastPostion);
+
+        PlacementData data =
+            PlantData.GetPlacementData(gridPosition);
+
+        if (data == null)
+        {
+            Debug.Log("No plant found");
+            return;
+        }
+
+        GameObject plant =
+            placedGameObjects[data.placedObjectIndex];
+
+        if (plant != null)
+        {
+            Destroy(plant);
+        }
+
+        placedGameObjects[data.placedObjectIndex] = null;
+
+        PlantData.RemoveObjectAt(gridPosition);
+    }
+
+
+}

@@ -236,6 +236,7 @@ MonoBehaviour:
   - {fileID: 2399325519305171003}
   - {fileID: 6570415415707711915}
   GrowthTime: 10
+  PlantBurst: {fileID: 1597640634480498270}
 --- !u!1 &6461647366291004223
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +450,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8429648832367153362}
+  - {fileID: 8038850329494059610}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-7382679805674864878
@@ -466,3 +468,70 @@ MonoBehaviour:
   ObjectID: 8
   Size: {x: 1, y: 1}
   Phase: 0
+--- !u!1001 &5643588225941483712
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7506618063374558133}
+    m_Modifications:
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952930197591155723, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+      propertyPath: m_Name
+      value: Plant Burst
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+--- !u!198 &1597640634480498270 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6375399591375873694, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+  m_PrefabInstance: {fileID: 5643588225941483712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8038850329494059610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2440307093817248410, guid: d26910b30c800cd449d972c44f1c9086, type: 3}
+  m_PrefabInstance: {fileID: 5643588225941483712}
+  m_PrefabAsset: {fileID: 0}

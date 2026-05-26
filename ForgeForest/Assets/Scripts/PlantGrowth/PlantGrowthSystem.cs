@@ -14,7 +14,7 @@ public class PlantGrowthSystem : MonoBehaviour
 
     private float GrowthTimeElapsed = 0f;
 
-
+   [SerializeField] private ParticleSystem PlantBurst;
 
 
   
@@ -68,7 +68,7 @@ public class PlantGrowthSystem : MonoBehaviour
             CurrentPhase = PlantPhases.Count - 1;
             FullyGrown = true;
         }
-
+        PlantBurst.Play();
         UpdateVisuals();
     }
 
@@ -76,6 +76,7 @@ public class PlantGrowthSystem : MonoBehaviour
     {
         for (int i = 0; i < PlantPhases.Count; i++)
         {
+           
             PlantPhases[i].SetActive(i == CurrentPhase);
         }
     }
